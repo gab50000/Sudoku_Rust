@@ -1,7 +1,7 @@
 use std::collections::BTreeSet;
 
 fn get_possible_values(board: &[[i32; 9]; 9], i: usize, j: usize) -> BTreeSet<i32> {
-    let mut values: BTreeSet<_> = (1..9).collect();
+    let mut values: BTreeSet<_> = (1..=9).collect();
 
     // iterate over rows
     for ii in 0..9 {
